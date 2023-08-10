@@ -27,8 +27,8 @@ const batteries = 35 * 2
 const pens = 5 * NONE_SELECTED
 const price = shoes + toys + shirts + batteries + pens
 
-if (country === 'RSA' && price > 1000 || 
-    country === 'NAM' && price > 60) {
+if (country === 'RSA' && price >= 1000 || 
+    country === 'NAM' && price >= 60) {
 	shipping = 0
 }
 
