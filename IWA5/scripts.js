@@ -3,7 +3,7 @@ const BANNED_WARNING = 'Unfortunately we do not ship to your country of residenc
 const NONE_SELECTED = 0
 
 const customers = '1'
-let country = 'RSA'
+const country = 'RSA'
 let currency = null
 let shipping = null
 
