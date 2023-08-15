@@ -9,8 +9,9 @@ console.log(value + 4 + value) //value was a string therefore it was being conca
 
 const nickname= "Timmy";
 const firstname = "Timothy";
+const morn = 'Good Morning!';
 
-console.log(`Good Morning, ${nickname || firstname}!`)
+console.log(`${`Good Morning ${nickname}` || `Good Morning ${firstname}` || morn}`)
 
 // Challenge 3
 
@@ -30,6 +31,6 @@ const owed = `R ${Math.abs(parseFloat(leoBalance) + parseFloat(sarahBalance)).to
 const leo = `${leoName} ${leoSurname.trimEnd()} (Owed: R ${Math.abs(parseFloat(leoBalance)).toFixed(2)})`
 const sarah = `${sarahName.trimEnd()} ${sarahSurname} (Owed: R ${Math.abs(parseFloat(sarahBalance)).toFixed(2)})`
 const total = "Total amount owed: "
-const result = `\n${leo} \n${sarah} \n\n${divider} \n  ${total} ${owed} \n${divider}`
+const result = `\n${leo} \n${sarah} \n\n${divider} \n  ${total} ${`${owed.substring(0, 4)} ${owed.substring(4, 10)}`} \n${divider}`
 
 console.log(result)
