@@ -25,7 +25,7 @@ const leo = {
 }
 
 const sarah = {
-	name: sarahName + sarahSurname,
+	name: `${sarahName.trim()} ${sarahSurname}`,
 	age: 62,
 	balance: sarahBalance,
 	address: {
