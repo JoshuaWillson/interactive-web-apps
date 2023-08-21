@@ -20,6 +20,31 @@ const updateColor = () => {
     
 }
 
+
+/**
+ * Converts a string value to either upper or lower case.
+ * @param {string} text - The text value to transform
+ * @param {"uppercase" | "lowercase"} [format] - How to transform the case. If no value is provided then one will be selected randomly.
+ * @returns {string}
+ */
+const changeCase = (text, format) => {
+    const formatMap = {
+        random: Math.random() >= 0.5 ? 'toUpperCase' : 'toLowerCase',
+        uppercase: 'toUpperCase',
+        lowercase: 'toLowerCase'
+    }
+
+    const key = format || 'random'
+    const method = formatMap[key]
+    return text[method]()
+}
+
+console.log(changeCase('josh', 'uppercase'))
+console.log(changeCase('HELLO', 'lowercase'))
+
+
+
+
 const subtractHandler = () => {
     const newValue = parseInt(elements.number.value) - STEP_AMOUNT
     elements.number.value = newValue
