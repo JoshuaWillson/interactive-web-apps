@@ -1,8 +1,8 @@
 // IWA_14 Challenge 1
 
-firstName = 'John';
-age = 35;
-hobby = 'Coding';
+const firstName = 'John';
+const age = 35;
+const hobby = 'Coding';
 
 const logTwice = (parameter) => {
   console.log(parameter)
