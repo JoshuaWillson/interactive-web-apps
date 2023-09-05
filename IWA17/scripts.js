@@ -80,7 +80,6 @@ const createHtml = (data) => {
         inner = addCell(inner, 'table__cell table__cell_sidebar', `Week ${week}`)
     
          for (const { dayOfWeek, value } of days) {
-            const chloesBDay = new Date()
             const isToday = new Date().getDate() === value
             const isWeekend = dayOfWeek ===  1 || dayOfWeek === 7
             const isAlternate = week % 2 === 0
